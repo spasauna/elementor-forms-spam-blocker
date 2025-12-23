@@ -1,0 +1,256 @@
+/**
+ * Elementor Forms Spam Blocker - Admin Styles
+ */
+
+.efsb-settings-wrap {
+    max-width: 800px;
+}
+
+.efsb-header {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin: 20px 0 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.25);
+}
+
+.efsb-header-icon {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.efsb-header-icon .dashicons {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+}
+
+.efsb-header-text p {
+    color: #fff;
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Settings sections */
+.efsb-settings-wrap .form-table {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.efsb-settings-wrap .form-table th {
+    padding: 20px 10px 20px 0;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.efsb-settings-wrap .form-table td {
+    padding: 20px 10px;
+}
+
+.efsb-settings-wrap .form-table tr:not(:last-child) {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Mode selection */
+.efsb-settings-wrap fieldset label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.efsb-settings-wrap fieldset label input[type="radio"] {
+    margin-top: 3px;
+}
+
+.efsb-settings-wrap fieldset label .description {
+    color: #64748b;
+    font-style: normal;
+}
+
+/* Keywords section */
+#efsb-keywords-container {
+    max-width: 500px;
+}
+
+#efsb-keywords-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.efsb-keyword-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: efsb-fade-in 0.2s ease-out;
+}
+
+@keyframes efsb-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.efsb-keyword-item .efsb-keyword-input {
+    flex: 1;
+    max-width: 350px;
+}
+
+.efsb-keyword-item .efsb-remove-keyword {
+    padding: 4px 8px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #ef4444;
+    color: #ef4444;
+    transition: all 0.15s ease;
+}
+
+.efsb-keyword-item .efsb-remove-keyword:hover {
+    background: #ef4444;
+    color: #fff;
+}
+
+.efsb-keyword-item .efsb-remove-keyword .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    line-height: 1;
+}
+
+.efsb-add-keyword-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-top: 8px;
+    border-top: 1px dashed #e2e8f0;
+}
+
+#efsb-new-keyword {
+    max-width: 350px;
+}
+
+#efsb-add-keyword {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+#efsb-add-keyword .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Info box */
+.efsb-info-box {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-top: 30px;
+}
+
+.efsb-info-box h3 {
+    margin: 0 0 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #166534;
+    font-size: 15px;
+}
+
+.efsb-info-box h3 .dashicons {
+    color: #22c55e;
+}
+
+.efsb-info-box ul {
+    margin: 0;
+    padding-left: 24px;
+}
+
+.efsb-info-box li {
+    margin-bottom: 8px;
+    color: #15803d;
+    line-height: 1.5;
+}
+
+.efsb-info-box li:last-child {
+    margin-bottom: 0;
+}
+
+.efsb-info-box li strong {
+    color: #166534;
+}
+
+/* Submit button */
+.efsb-settings-wrap .submit {
+    padding-top: 20px;
+}
+
+.efsb-settings-wrap .submit .button-primary {
+    padding: 8px 24px;
+    height: auto;
+    font-size: 14px;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    border: none;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+    transition: all 0.2s ease;
+}
+
+.efsb-settings-wrap .submit .button-primary:hover {
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+    transform: translateY(-1px);
+}
+
+/* Description text */
+.efsb-settings-wrap p.description {
+    color: #64748b;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .efsb-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .efsb-add-keyword-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #efsb-new-keyword,
+    .efsb-keyword-item .efsb-keyword-input {
+        max-width: 100%;
+    }
+}
+
+/* Settings error/success messages */
+.efsb-settings-wrap .notice {
+    margin: 15px 0;
+}
+
