@@ -23,8 +23,14 @@ A WordPress plugin that detects and blocks spam submissions in Elementor Pro For
 ### Settings Page
 Configure detection mode, fields to scan, and manage your keyword blocklist.
 
+<img width="2834" height="1280" alt="screencapture-null100-wp-admin-admin-php-2025-12-24-00_08_12" src="https://github.com/user-attachments/assets/5e30778b-d83b-485f-93a1-c7e79b2ff228" />
+
+
 ### Blocked Submission (Silent Mode)
 Submissions blocked in silent mode show a clear spam status indicator.
+
+<img width="2026" height="2943" alt="screencapture-null100-wp-admin-options-general-php-2025-12-24-00_07_12" src="https://github.com/user-attachments/assets/652e62dc-b06c-443c-abab-75423f470d31" />
+
 
 ## Requirements
 
